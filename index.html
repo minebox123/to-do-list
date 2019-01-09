@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>To-do-list</title>
+  <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <h1>To-do-list</h1>
+    <button type="button" id="using" onclick="inf()">How to use it</button>
+    <div class="how_to_use_it">
+      <p id="rule1"></p>
+      <p id="rule2"></p>
+      <p id="rule3"></p>
+      <p id="rule4"></p>
+      <p id="rule5"></p>
+    </div>
+  </header>
+
+  <main>
+    <div class="new_el">
+      <input type="text" id="userInput" placeholder="Add one element...">
+      <span id="btn" onclick="addNewElement()">+</span>
+    </div>
+
+
+  <ul id='list'></ul>
+  </main>
+  <script src="resources/JS/main.js">
+  </script>
+</body>
+
+</html>
