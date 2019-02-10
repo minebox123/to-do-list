@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>To-do-list</title>
   <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800" rel="stylesheet">
   <link rel="stylesheet" href="resources/css/style.css" type="text/css">
 </head>
@@ -12,24 +14,26 @@
 <body>
   <header>
     <h1>To-do-list</h1>
-    <button type="button" id="using" onclick="inf()">How to use it</button>
+    <button type="button" id="using">How to use it</button>
     <div class="how_to_use_it">
-      <p id="rule1"></p>
-      <p id="rule2"></p>
-      <p id="rule3"></p>
-      <p id="rule4"></p>
-      <p id="rule5"></p>
+      <p>1. Keep it short, and prioritaze daily.</p>
+      <p>2. Separate home and work (and school, and kids, and everything else).</p>
+      <p>3. Keep it accessible. All the time.</p>
+      <p>4. Identify and separate distracting ideas from actual tasks.</p>
+      <p>5. Do the most important things first.</p>
     </div>
   </header>
 
   <main>
     <div class="new_el">
       <input type="text" id="userInput" placeholder="Add one element...">
-      <span id="btn" onclick="addNewElement()">+</span>
+      <span id="btn" onclick="addNewElement()"><i title="Add a new task" class="fas fa-plus"></i></span>
     </div>
 
 
-  <ul id='list'></ul>
+
+    <ul id='list'></ul>
+
   </main>
   <script src="resources/JS/main.js">
   </script>
